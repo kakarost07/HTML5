@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>textarea_selete_option_optgroup_button </title>
+	</head>
+	<body>
+		<h1>textarea태그</h1>
+		<form>
+			<label>메세지:</label>
+			<textarea name="message" rows="5" cols="30" placeholder="여기에 메세지를 입력하세요"></textarea>
+		</form>
+		
+		<hr>
+		
+		<h1>selete태그</h1>
+		<form>
+		<label for="food">좋아하는 음식</label>
+			<select id="food" name="food">
+				<option value="pizza">피자</option>
+				<option value="burger">햄버거</option>
+				<option value="sushi">스시</option>
+			</select>
+		</form>
+
+		<br>
+		<h1>option태그</h1>
+		<select name="language">
+			<option value="korean">한국어</option>		
+			<option value="english">영어</option>		
+			<option value="japanese" selected>일본어</option>		
+			<option value=""></option>		
+		</select>
+
+		<br>
+		<h1>optgroup태그</h1>
+		<form>
+			<label for="meal">선호하는 음식:</label>
+			<section id="meal" name="meal">
+				<optgroup label="한식">
+					<option value="bibimbap">비빔밥</option>				
+					<option value="bulgogi">불고기</option>				
+				</optgroup>
+				<optgroup label="양식">
+					<option value="pasta">파스타</option>				
+					<option value="steak">스테이크</option>				
+				</optgroup>
+			</section>
+		</form>
+		
+		<br>
+		
+		<form action="/HTML5/main.jsp" method="post">
+			이름 : <input type="text" name="userName">
+			나이 : <input type="number" name="userAge">
+			
+			<br>
+			<br>
+			
+			<button type="submit">main.jsp 요청</button>
+			<button type="reset">입력한 값 다시 취소</button>
+		
+		</form>		
+		
+	</body>
+</html>
